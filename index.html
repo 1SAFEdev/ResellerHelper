@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Reseller Helper</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<nav>
+		<a class="active" href="#">Home</a>
+		<a href="shoes.html">Shoes</a>
+		<a href="consoles.html">Consoles</a>
+		<a href="clothing.html">Clothing</a>
+		<a href="extras.html">Extras</a>
+	</nav>
+
+	<form>
+		<label for="item-title">Title</label>
+		<input type="text" id="item-title" name="item-title" maxlength="80"><br><br>
+
+		<label for="description">Description</label>
+		<textarea id="description" name="description" rows="8"></textarea><br><br>
+
+		<input type="button" value="Add Listing" onclick="addListing()">
+	</form>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
