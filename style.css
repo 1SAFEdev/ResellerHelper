@@ -50,6 +50,47 @@ nav a.active {
 	color: #333;
 }
 
+/* Select styles */
+select {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: var(--border-radius);
+	margin-bottom: 20px;
+	font-size: 16px;
+	line-height: 1.5;
+	transition: var(--transition);
+}
+
+/* Style the dropdown arrow */
+select::-ms-expand {
+	display: none;
+}
+
+select::after {
+	content: "\25BC";
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	pointer-events: none;
+}
+
+/* Style the other options */
+option {
+	background-color: #fff;
+	color: #333;
+	transition: var(--transition);
+}
+
+/* Remove default select styling */
+select:focus {
+	outline: none;
+	box-shadow: none;
+	border-color: #ccc;
+}
+
+
 form {
 	margin: 20px;
 	padding: 20px;
