@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Reselling Calculator</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="index.html">CALCULATOR</a></li>
+		</ul>
+	</nav>
+	<h1>Item Profit Calculator</h1>
+	<form>
+
+		<label for="purchaseField">Buy for:</label>
+		<input type="text" id="purchaseField" name="purchaseField" required>
+
+		<label for="shippingField">Shipping:</label>
+		<input type="text" id="shippingField" name="shippingField" required>
+
+		<label for="sellField">Sell for:</label>
+		<input type="text" id="sellField" name="sellField" required>
+
+		<input type="button" value="Calculate" onclick="calculatePercentage()">
+
+	</form>
+	<p id="resultLabel"></p>
+	<p id="profitLabel"></p>
+	<p id="roiLabel"></p>
+	<script src="script.js"></script>
+</body>
+
+</html>
